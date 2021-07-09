@@ -10,10 +10,10 @@ The "data prepare.py" is used for data processing and feature extraction, and we
 The "model.py"  is used for model training and performance evaluation.  We use ten-fold cross-validation to evaluate the performance of StackTADB.
 
 ## Dependency
-Python 3.6
-Numpy
-h5py
-keras
+Python 3.6  
+Numpy  
+h5py  
+keras  
 sklearn
 
 ## Usage
