@@ -17,7 +17,7 @@ keras
 sklearn
 
 ## Usage
-If you want to compile and run "data prepare.py", you can run the script as:
+If you want to compile and run "data prepare.py", you can run the script as:  
 `python data prepare.py`  
 If you want to compile and run "model.py", you can run the script as:  
-`python model.py`  
+`python model.py`
