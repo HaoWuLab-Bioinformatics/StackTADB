@@ -1,7 +1,7 @@
 # StackTADB
 StackTADB is a stacking-based ensemble learning model for accurately predicting the boundaries of Topologically Associating Domains (TADs) in fruit flies.
 
-# Dataset
+## Dataset
 The dataset used in the study comes from Henderson et al. Download their study here https://doi.org/10.1093/nar/gkz315
 
 # Overview
@@ -18,6 +18,6 @@ sklearn
 
 # Usage
 If you want to compile and run "data prepare.py", you can run the script as:
-`` python data prepare.py
+`python data prepare.py`
 If you want to compile and run "model.py", you can run the script as:
-`` python model.py
+`python model.py`
