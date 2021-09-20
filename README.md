@@ -18,9 +18,9 @@ keras
 sklearn
 
 ## Usage
-First, you should perform data preprocessing, you can run the script as:
+First, you should perform data preprocessing, you can run the script as:  
 `python data prepare.py`  
-Then you should perform feature extraction you need through running the script as:
+Then you should perform feature extraction you need through running the script as:  
 `python feature_code.py` or `python psednc.py`  
 Finally if you want to compile and run StackTADB, you can run the script as:  
 `python model.py`
