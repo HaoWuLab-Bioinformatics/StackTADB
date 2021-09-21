@@ -186,11 +186,10 @@ def NV(k):
 '''k=5
 x = data
 lenth=len(x)
-data = k_mer_2D(6,lenth)
+data = k_mer_2D(k,lenth)
 data = np.array(data)
-feature1 = max_len(600,6,data)
-#feature1 = noramlization(feature1)
-np.savetxt('feature_k-mers_k='+str(k)+'.txt', data_array)'''
+feature1 = max_len(600,k,data)
+np.savetxt('feature_k-mers_k='+str(k)+'.txt', feature1)'''
 
 #NPSE
 k=7
