@@ -42,6 +42,7 @@ def k_mer_1seq(k,input_data):
         loc = 0
         for j in range(k):
             loc = input_data[i+j] * (4**(k-j-1)) + loc
+        loc = int(loc)
         A[loc] = A[loc] + 1
     return A
 
