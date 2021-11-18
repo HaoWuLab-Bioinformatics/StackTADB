@@ -2,10 +2,12 @@
 StackTADB is a stacking-based ensemble learning model for accurately predicting the boundaries of Topologically Associating Domains (TADs) in fruit flies.
 
 ## Dataset
-The dataset used in the study comes from Henderson et al. Download their study here https://doi.org/10.1093/nar/gkz315
+The "dm3.kc167.example.rar" is the compressed file of the data set used in this study, containing the DNA sequences encoded by one-hot matrix. The dataset contains a total of 15057 positive sequences and 15070 negative sequences, and each sequence consists of one thousand bases. We randomly select 80% of the data set as the training set, and the remaining 20% of the data set as the independent testing set using the script as: 
+`x_train, x_test, y_train, y_test = train_test_split(x, y, test_size=0.2, random_state=10)`  
+Finally, the training set contains 12077 positive sequences and 12024 negative sequences, and the independent testing set contains 2980 positive sequences and 3046 negative sequences.
 
 ## Overview
-The "dm3.kc167.example" is a file containing one-hot-encoded DNA sequences, in which 15057 sequences are positive samples (non-TAD boundaries), and 15070 sequences are negative samples (TAD boundaries).  
+ 
 The "data prepare.py" is used for data processing.  
 The "feature_code.py" and the "psednc.py" is used for feature extraction, containing a total of seven features. 
 The "model.py" is used for model training and performance evaluation. We perform ten-fold cross-validation on the training set and evaluate the performance of StackTADB on the independent test set.
