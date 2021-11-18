@@ -17,8 +17,8 @@ The file "feature_k-mers_k=6.rar" is the compressed file of the feature used in 
 
 ## Dependency
 Python 3.6   
-keras  2.3.1
-sklearn
+keras  2.3.1  
+sklearn  
 numpy  
 mlxtend  
 h5py 
