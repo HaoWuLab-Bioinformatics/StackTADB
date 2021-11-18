@@ -52,12 +52,11 @@ outf= "data_base.fasta"
 def readwrite(inf,outf):
     f=open(inf,'r')
     out=open(outf,'w')
-    #next(f)   #不要第一行
     i=1
     for line in f.readlines():
         list_line = line.strip().split()
-        x=list_line[0]+"\n"  #只要第一列
-        y=">Chr"+str(i)+"\n"  #每一行前面添加的描述信息
+        x=list_line[0]+"\n" 
+        y=">Chr"+str(i)+"\n"  
         out.writelines(y)
         out.writelines(x)
         i=i+1
